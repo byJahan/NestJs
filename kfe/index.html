@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>NestJS CRUD demo</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 2rem; }
+    table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+    th, td { border: 1px solid #ccc; padding: .5rem; text-align: left; }
+    input[type=number] { width: 5rem; }
+  </style>
+</head>
+<body>
+  <h1>Items (NestJS + vanilla JS)</h1>
+
+  <form id="addForm">
+    <input name="name" placeholder="Name" required />
+    <input name="price" type="number" step=".01" placeholder="Price" required />
+    <button>Add (POST)</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th><th>Name</th><th>Price</th><th></th>
+      </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+  </table>
+
+  <script src="app.js"></script>
+</body>
+</html>
